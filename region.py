@@ -39,7 +39,7 @@ async def on_message(message):
     #バージョン表示
     elif message.content.startswith('#version'):
         version = '0.0.1'
-        await message.channel.send(version)
+        await message.channel.send("Region_Bot/" + version)
     #ヘルプを表示
     elif message.content.startswith('#help'):
         help = 'USAGE:\n'\
