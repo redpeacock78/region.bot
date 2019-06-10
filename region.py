@@ -38,7 +38,7 @@ async def on_message(message):
         await message.channel.send(reply)
     #バージョン表示
     elif message.content.startswith('#version'):
-        version= '0.0.1'
+        version = '0.0.1'
         await message.channel.send(version)
     #ヘルプを表示
     elif message.content.startswith('#help'):
