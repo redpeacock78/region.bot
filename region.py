@@ -36,6 +36,10 @@ async def on_message(message):
     elif message.content.startswith('#alive'):
         reply = 'I am alive!'
         await message.channel.send(reply)
+    #バージョン表示
+    elif message.content.startswith('#version'):
+        version= '0.0.1'
+        await message.channel.send(version)
     #ヘルプを表示
     elif message.content.startswith('#help'):
         help = 'USAGE:\n'\
@@ -44,6 +48,8 @@ async def on_message(message):
                '         Change the server region.\n'\
                ' #alive\n'\
                '         Make a bot survival check.\n'\
+               ' #version\n'\
+               '         The version of this bot.\n'\
                ' #help\n'\
                '         Display help.'
         await message.channel.send(help)
